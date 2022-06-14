@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GnwxbBIHpz5qNv5PRUMObx0G4ChXHG4CXiVkMphb/VhuUGFJuD4CsxygL5iFxX7xECR+Nlv8eaNNb8VH1d0c3Q==",
+  "dgSpecHash": "KS6SjhCSTIOuBhamRFeo9lysudNl0Lbublozxc57tgT8FVSl9V+/Nhftc1yRlwekF1eZgwFmVeqFXtEp1Zwm6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderConsole\\YoutubeDownloaderConsole.csproj",
+  "projectFilePath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderCore\\YoutubeDownloaderCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ptsko\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
     "C:\\Users\\ptsko\\.nuget\\packages\\cliwrap\\3.4.2\\cliwrap.3.4.2.nupkg.sha512",
@@ -10,8 +10,7 @@
     "C:\\Users\\ptsko\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\ptsko\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512",
     "C:\\Users\\ptsko\\.nuget\\packages\\youtubeexplode\\6.1.2\\youtubeexplode.6.1.2.nupkg.sha512",
-    "C:\\Users\\ptsko\\.nuget\\packages\\youtubeexplode.converter\\6.1.2\\youtubeexplode.converter.6.1.2.nupkg.sha512",
-    "C:\\Users\\ptsko\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+    "C:\\Users\\ptsko\\.nuget\\packages\\youtubeexplode.converter\\6.1.2\\youtubeexplode.converter.6.1.2.nupkg.sha512"
   ],
   "logs": []
 }

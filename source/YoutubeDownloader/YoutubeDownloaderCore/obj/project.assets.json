@@ -84,20 +84,6 @@
         "runtime": {
           "lib/net5.0/YoutubeExplode.Converter.dll": {}
         }
-      },
-      "YoutubeDownloaderCore/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "YoutubeExplode": "6.1.2",
-          "YoutubeExplode.Converter": "6.1.2"
-        },
-        "compile": {
-          "bin/placeholder/YoutubeDownloaderCore.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/YoutubeDownloaderCore.dll": {}
-        }
       }
     }
   },
@@ -278,16 +264,10 @@
         "youtubeexplode.converter.6.1.2.nupkg.sha512",
         "youtubeexplode.converter.nuspec"
       ]
-    },
-    "YoutubeDownloaderCore/1.0.0": {
-      "type": "project",
-      "path": "../YoutubeDownloaderCore/YoutubeDownloaderCore.csproj",
-      "msbuildProject": "../YoutubeDownloaderCore/YoutubeDownloaderCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "YoutubeDownloaderCore >= 1.0.0",
       "YoutubeExplode >= 6.1.2",
       "YoutubeExplode.Converter >= 6.1.2"
     ]
@@ -299,11 +279,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderConsole\\YoutubeDownloaderConsole.csproj",
-      "projectName": "YoutubeDownloaderConsole",
-      "projectPath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderConsole\\YoutubeDownloaderConsole.csproj",
+      "projectUniqueName": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderCore\\YoutubeDownloaderCore.csproj",
+      "projectName": "YoutubeDownloaderCore",
+      "projectPath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderCore\\YoutubeDownloaderCore.csproj",
       "packagesPath": "C:\\Users\\ptsko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderConsole\\obj\\",
+      "outputPath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -323,11 +303,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderCore\\YoutubeDownloaderCore.csproj": {
-              "projectPath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderCore\\YoutubeDownloaderCore.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -359,12 +335,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.14, 5.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

@@ -1,0 +1,16 @@
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderConsole.exe
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderConsole.deps.json
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderConsole.runtimeconfig.json
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderConsole.runtimeconfig.dev.json
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderConsole.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\ref\YoutubeDownloaderConsole.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderConsole.pdb
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.csproj.AssemblyReference.cache
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.AssemblyInfoInputs.cache
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.AssemblyInfo.cs
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.csproj.CoreCompileInputs.cache
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\ref\YoutubeDownloaderConsole.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.pdb
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.genruntimeconfig.cache
