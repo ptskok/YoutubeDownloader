@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jfEC83v1cD/TqKhV60QKTorSllpYgclp5mg0ZriW0Fw7vdO0rVOCAyGFwW/pjGHvsc1I/ILYYfHmm3PmI4fyZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ptsko\\OneDrive\\Počítač\\VSCODES\\GITHUB (PROFFESIONAL)\\YoutubeDownloader\\YoutubeDownloader\\source\\YoutubeDownloader\\YoutubeDownloaderConsole\\YoutubeDownloaderConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ptsko\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
