@@ -1,4 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
+using System.IO;
+using System.Threading.Tasks;
+using YoutubeExplode;
+using YoutubeExplode.Converter;
+using YoutubeExplode.Videos;
+using YoutubeExplode.Videos.Streams;
 
 namespace YoutubeDownloaderCore
 {
@@ -6,17 +14,20 @@ namespace YoutubeDownloaderCore
     {
         private readonly string _saveVideoPath;
         private readonly string _videoLink;
+        private readonly string ffMpegPath = "C:\\Users\\ptsko\\OneDrive\\Počítač\\ffmpeg";
+
         public Downloader(string saveVideoPath, string videoLink)
         {
             _saveVideoPath = saveVideoPath;
             _videoLink = videoLink;
         }
 
-        public void Download(int option)
+        public async Task Download(int option)
         {
             switch (option)
             {
                 case 'a':
+                    await DownloadAudio();
                     break;
                 case 'b':
                     break;
@@ -29,9 +40,29 @@ namespace YoutubeDownloaderCore
             }
         }
 
-        private void DownloadAudio()
+        private async Task DownloadAudio()
         {
-            throw new NotImplementedException("This method is not yet implemented!");
+            var savePath = Path.GetFullPath(_saveVideoPath);
+            var id = VideoId.Parse(_videoLink);
+            Console.WriteLine(id.Value);
+            var youtube = new YoutubeClient();
+
+            var fp = $"{savePath}\\videoDone.mp3";
+            Console.WriteLine("saving as: {0}",fp);
+            try
+            {
+                await youtube.Videos.DownloadAsync(id, fp, o => o
+                    .SetContainer("webm")
+                    .SetPreset(ConversionPreset.Medium)
+                    .SetFFmpegPath(ffMpegPath)
+                );
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            Console.WriteLine("Done!");
         }
 
         private void DownloadVideo()

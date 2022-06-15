@@ -14,3 +14,10 @@ C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownload
 C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\ref\YoutubeDownloaderConsole.dll
 C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.pdb
 C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.genruntimeconfig.cache
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\AngleSharp.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\CliWrap.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeExplode.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeExplode.Converter.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderCore.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\bin\Debug\net5.0\YoutubeDownloaderCore.pdb
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderConsole\obj\Debug\net5.0\YoutubeDownloaderConsole.csproj.CopyComplete
