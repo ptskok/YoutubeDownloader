@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using YoutubeExplode;
 using YoutubeExplode.Converter;
@@ -30,6 +31,7 @@ namespace YoutubeDownloaderCore
                     await DownloadAudio();
                     break;
                 case 'b':
+                    await DownloadVideo();
                     break;
                 case 'c':
                     break;
@@ -65,9 +67,36 @@ namespace YoutubeDownloaderCore
             Console.WriteLine("Done!");
         }
 
-        private void DownloadVideo()
+        private async Task DownloadVideo()
         {
-            throw new NotImplementedException("This method is not yet implemented!");
+            var savePath = Path.GetFullPath(_saveVideoPath);
+            var id = VideoId.Parse(_videoLink);
+            Console.WriteLine(id.Value);
+            var youtube = new YoutubeClient();
+
+            var fp = $"{savePath}\\videoDone.mp4";
+            Console.WriteLine("saving as: {0}", fp);
+            var streamManifest = youtube.Videos.Streams.GetManifestAsync(id.Value);
+            var streamInfo = streamManifest.Result.GetMuxedStreams().GetWithHighestVideoQuality();
+
+            await youtube.Videos.Streams.DownloadAsync(streamInfo, fp);
+
+            //Muxing streams (not yet finished)
+            /*
+
+            var streamManifest = youtube.Videos.Streams.GetManifestAsync(id.Value);
+
+            var audioStreamInfo = streamManifest.Result.GetAudioStreams().GetWithHighestBitrate();
+            var videoStreamInfo = streamManifest.Result.GetVideoStreams().GetWithHighestVideoQuality();
+            var streamInfos = new IStreamInfo[] { audioStreamInfo, videoStreamInfo };
+
+            // Download and process them into one file
+            await youtube.Videos.DownloadAsync(streamInfos, new ConversionRequestBuilder(fp)
+                .SetPreset(ConversionPreset.Medium)
+                .SetContainer("webm")
+                .SetFFmpegPath(ffMpegPath)
+                .Build()
+            );*/
         }
 
         private void DownloadAudioPlaylist()
