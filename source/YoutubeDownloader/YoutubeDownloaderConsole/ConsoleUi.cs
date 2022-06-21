@@ -46,7 +46,20 @@ namespace YoutubeDownloaderConsole
                 Environment.Exit(0);
             }
             var downloader = new Downloader(savePath, videoLink);
-            await downloader.Download(option);
+            try
+            {
+                await downloader.Download(option);
+            }
+            catch (FileExistsException e)
+            {
+                Console.WriteLine(e);
+                Environment.Exit(1);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }

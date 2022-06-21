@@ -25,12 +25,28 @@ namespace YoutubeDownloaderCore
 
         public async Task Download(int option)
         {
+
+            var youtube = new YoutubeClient();
+            var videoName = youtube.Videos.GetAsync(VideoId.Parse(_videoLink)).Result.Title;
+            foreach (var file in Directory.GetFiles(_saveVideoPath))
+            {
+                Console.WriteLine(file);
+            }
             switch (option)
             {
+
                 case 'a':
+                    if (Directory.GetFiles(_saveVideoPath).Contains(_saveVideoPath + "\\" + videoName + ".mp3"))
+                    {
+                        throw new FileExistsException("This track is already downloaded in the specified folder!");
+                    }
                     await DownloadAudio();
                     break;
                 case 'b':
+                    if (Directory.GetFiles(_saveVideoPath).Contains(_saveVideoPath + "\\" + videoName + ".mp4"))
+                    {
+                        throw new FileExistsException("This track is already downloaded in the specified folder!");
+                    }
                     await DownloadVideo();
                     break;
                 case 'c':
@@ -49,7 +65,9 @@ namespace YoutubeDownloaderCore
             Console.WriteLine(id.Value);
             var youtube = new YoutubeClient();
 
-            var fp = $"{savePath}\\videoDone.mp3";
+            var vid = youtube.Videos.GetAsync(id);
+
+            var fp = $"{savePath}\\{vid.Result.Title}.mp3";
             Console.WriteLine("saving as: {0}",fp);
             try
             {
@@ -74,16 +92,26 @@ namespace YoutubeDownloaderCore
             Console.WriteLine(id.Value);
             var youtube = new YoutubeClient();
 
-            var fp = $"{savePath}\\videoDone.mp4";
+            var vid = youtube.Videos.GetAsync(id);
+
+            var fp = $"{savePath}\\{vid.Result.Title}.mp4";
             Console.WriteLine("saving as: {0}", fp);
             var streamManifest = youtube.Videos.Streams.GetManifestAsync(id.Value);
             var streamInfo = streamManifest.Result.GetMuxedStreams().GetWithHighestVideoQuality();
 
             await youtube.Videos.Streams.DownloadAsync(streamInfo, fp);
+            Console.WriteLine("Done!");
+        }
 
+        private async Task DownloadVideoMuxing()
+        {
             //Muxing streams (not yet finished)
-            /*
+            var savePath = Path.GetFullPath(_saveVideoPath);
+            var id = VideoId.Parse(_videoLink);
+            var youtube = new YoutubeClient();
+            var vid = youtube.Videos.GetAsync(id);
 
+            var fp = $"{savePath}\\{vid.Result.Title}.mp4";
             var streamManifest = youtube.Videos.Streams.GetManifestAsync(id.Value);
 
             var audioStreamInfo = streamManifest.Result.GetAudioStreams().GetWithHighestBitrate();
@@ -92,11 +120,11 @@ namespace YoutubeDownloaderCore
 
             // Download and process them into one file
             await youtube.Videos.DownloadAsync(streamInfos, new ConversionRequestBuilder(fp)
-                .SetPreset(ConversionPreset.Medium)
+                .SetPreset(ConversionPreset.UltraFast)
                 .SetContainer("webm")
                 .SetFFmpegPath(ffMpegPath)
                 .Build()
-            );*/
+            );
         }
 
         private void DownloadAudioPlaylist()
