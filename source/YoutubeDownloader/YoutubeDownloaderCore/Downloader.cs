@@ -5,7 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using YoutubeExplode;
+using YoutubeExplode.Common;
 using YoutubeExplode.Converter;
+using YoutubeExplode.Playlists;
 using YoutubeExplode.Videos;
 using YoutubeExplode.Videos.Streams;
 
@@ -25,31 +27,36 @@ namespace YoutubeDownloaderCore
 
         public async Task Download(int option)
         {
-
-            var youtube = new YoutubeClient();
-            var videoName = youtube.Videos.GetAsync(VideoId.Parse(_videoLink)).Result.Title;
-            foreach (var file in Directory.GetFiles(_saveVideoPath))
+            var blockName = string.Empty;
+            if (option == 'a' || option == 'b')
             {
-                Console.WriteLine(file);
+                var youtube = new YoutubeClient();
+                blockName = youtube.Videos.GetAsync(VideoId.Parse(_videoLink)).Result.Title;
+                foreach (var file in Directory.GetFiles(_saveVideoPath))
+                {
+                    Console.WriteLine(file);
+                }
             }
+
             switch (option)
             {
 
                 case 'a':
-                    if (Directory.GetFiles(_saveVideoPath).Contains(_saveVideoPath + "\\" + videoName + ".mp3"))
+                    if (Directory.GetFiles(_saveVideoPath).Contains(_saveVideoPath + "\\" + blockName + ".mp3"))
                     {
                         throw new FileExistsException("This track is already downloaded in the specified folder!");
                     }
                     await DownloadAudio();
                     break;
                 case 'b':
-                    if (Directory.GetFiles(_saveVideoPath).Contains(_saveVideoPath + "\\" + videoName + ".mp4"))
+                    if (Directory.GetFiles(_saveVideoPath).Contains(_saveVideoPath + "\\" + blockName + ".mp4"))
                     {
                         throw new FileExistsException("This track is already downloaded in the specified folder!");
                     }
                     await DownloadVideo();
                     break;
                 case 'c':
+                    await DownloadAudioPlaylist();
                     break;
                 case 'd':
                     break;
@@ -127,9 +134,23 @@ namespace YoutubeDownloaderCore
             );
         }
 
-        private void DownloadAudioPlaylist()
+        private async Task DownloadAudioPlaylist()
         {
-            throw new NotImplementedException("This method is not yet implemented!");
+            var savePath = Path.GetFullPath(_saveVideoPath);
+            var youtube = new YoutubeClient();
+            var playlistId = PlaylistId.Parse(_videoLink);
+            var playlist = youtube.Playlists.GetAsync(playlistId);
+            savePath += "\\" + playlist.Result.Title;
+            Directory.CreateDirectory(savePath);
+            await foreach (var video in youtube.Playlists.GetVideosAsync(playlistId.Value))
+            {
+                var vidSavePath = savePath + "\\" + video.Title + ".mp3";
+                await youtube.Videos.DownloadAsync(video.Id, vidSavePath, o => o
+                    .SetContainer("webm")
+                    .SetPreset(ConversionPreset.Medium)
+                    .SetFFmpegPath(ffMpegPath)
+                );
+            }
         }
 
         private void DownloadVideoPlaylist()

@@ -25,7 +25,7 @@ namespace YoutubeDownloaderConsole
 
             Console.WriteLine("Please, paste in the video/playlist link:");
             string videoLink = Console.ReadLine();
-
+            /*
             try
             {
                 VideoId.Parse(videoLink);
@@ -35,7 +35,7 @@ namespace YoutubeDownloaderConsole
                 Console.WriteLine("Invalid link provided!");
                 throw;
             }
-
+            */
             Console.WriteLine("Do you want to download audio, video or a playlist (videos,audios)?");
             Console.WriteLine("Please, write following character, depending on a preferable download option:");
             Console.WriteLine("a - only audio\nb - video\nc - playlist of videos\nd - playlist of audios" +
