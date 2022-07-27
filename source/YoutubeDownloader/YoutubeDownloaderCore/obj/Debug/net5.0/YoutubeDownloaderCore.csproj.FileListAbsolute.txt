@@ -1,0 +1,12 @@
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\bin\Debug\net5.0\YoutubeDownloaderCore.deps.json
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\bin\Debug\net5.0\YoutubeDownloaderCore.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\bin\Debug\net5.0\ref\YoutubeDownloaderCore.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\bin\Debug\net5.0\YoutubeDownloaderCore.pdb
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\YoutubeDownloaderCore.csproj.AssemblyReference.cache
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\YoutubeDownloaderCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\YoutubeDownloaderCore.AssemblyInfoInputs.cache
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\YoutubeDownloaderCore.AssemblyInfo.cs
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\YoutubeDownloaderCore.csproj.CoreCompileInputs.cache
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\YoutubeDownloaderCore.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\ref\YoutubeDownloaderCore.dll
+C:\Users\ptsko\OneDrive\Počítač\VSCODES\GITHUB (PROFFESIONAL)\YoutubeDownloader\YoutubeDownloader\source\YoutubeDownloader\YoutubeDownloaderCore\obj\Debug\net5.0\YoutubeDownloaderCore.pdb
