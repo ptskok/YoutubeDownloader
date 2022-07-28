@@ -25,7 +25,7 @@ namespace YoutubeDownloaderCore
             _videoLink = videoLink;
         }
 
-        public async Task Download(int option,IProgress<int> progress)
+        public async Task Download(int option,IProgress<double> progress)
         {
             var blockName = string.Empty;
             if (option == 'a' || option == 'b')
@@ -79,7 +79,7 @@ namespace YoutubeDownloaderCore
             }
         }
 
-        private async Task DownloadAudio(IProgress<int> progress)
+        private async Task DownloadAudio(IProgress<double> progress)
         {
             var savePath = Path.GetFullPath(_saveVideoPath);
             var id = VideoId.Parse(_videoLink);
@@ -96,6 +96,7 @@ namespace YoutubeDownloaderCore
                     .SetContainer("webm")
                     .SetPreset(ConversionPreset.Medium)
                     .SetFFmpegPath(ffMpegPath)
+                    ,progress
                 );
             }
             catch (Exception e)

@@ -9,10 +9,11 @@ namespace YoutubeDownloaderConsole
 {
     public class ConsoleUi
     {
-        private static int _progressBarVal;
+        private static double _progressBarVal;
         static async Task Main(string[] args)
         {
             _progressBarVal = 0;
+
             //PATH is predefined for performance purposes
             /*
             Console.WriteLine("Write full path, where do you want to save your file: ");
@@ -77,16 +78,18 @@ namespace YoutubeDownloaderConsole
             var downloader = new Downloader(savePath, videoLink);
             try
             {
-                var progress = new Progress<int>(value => _progressBarVal = value);
-                var f = downloader.Download(option,progress);
-                while (f.Status != TaskStatus.RanToCompletion)
-                {
-                    Console.WriteLine(f.Status);
-                    System.Threading.Thread.Sleep(100);
-                }
-                Console.WriteLine(f.Status);
+                var progress = new Progress<double>(value => _progressBarVal = value);
+                var f =  downloader.Download(option,progress);
+                ProgressBarUpdate(f);
+                
+                //Console.WriteLine(_progressBarVal);
             }
             catch (FileExistsException e)
+            {
+                Console.WriteLine(e);
+                Environment.Exit(1);
+            }
+            catch (DirectoryExistsException e)
             {
                 Console.WriteLine(e);
                 Environment.Exit(1);
@@ -98,9 +101,16 @@ namespace YoutubeDownloaderConsole
             }
         }
 
-        private void progressBarUpdate()
+        private static void ProgressBarUpdate(Task f)
         {
-
+            var formerPos = Console.GetCursorPosition();
+            while (f.Status!=TaskStatus.RanToCompletion)
+            {
+                System.Threading.Thread.Sleep(100);
+                Console.SetCursorPosition(0,formerPos.Top);
+                Console.WriteLine(Math.Round(_progressBarVal*100,2) + "%                      ");
+            }
+            Console.WriteLine();
         }
     }
 }
